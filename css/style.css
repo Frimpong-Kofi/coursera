@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    display: inherit;
+    
+}
+
+/* .main {
+    padding: 10px 3%;
+} */
+
+.main h1{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3%;
+}
+
+.main .container .row{
+    width: 100%;
+}
+
+.main .container .row .col-4{
+    width: 100%;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px 2%;
+    position: relative;
+    background-color: grey;
+}
+
+.main .container .row .col-4 span{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    right: 0;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+.main .container .row .two .col-4:first-child span{
+    background-color: deeppink;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main .container .row .two .col-4:nth-child(2) span{
+    background-color: #e71a2f;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    color: #fff;
+}
+
+.main .container .row .col-4:last-child span{
+    background-color: rgb(233, 204, 40);
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    color: #000;
+}
+
+.main .container .row .col-4 p{
+    padding-top: 5%;
+}
+
+@media (min-width: 998px){
+    .main .container .row{
+        display: inline-flex !important;
+    }
+
+    .main .container .row .col-4:last-child{
+        width: 100%;
+    }
+  
+}
+
+@media (min-width:768px) and (max-width: 990px){
+    .main .container .row .two{
+            display: inline-flex;
+    }
+    .main .container .row .col-4:first-child, .main .container .row .col-4:nth-child(2) {
+        width: 100%;
+        margin:10px;
+        margin-left: 0;
+    }
+  
+    
+}
+
+@media (max-width: 767px){
+    .main{
+        padding: 10px;
+    }
+    .main .container .row .col-4{
+        width: 100%;
+        margin: 10px;
+        margin-left: 0;
+    }
+}
